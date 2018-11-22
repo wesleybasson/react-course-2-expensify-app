@@ -8,7 +8,7 @@ export class ExpensesSummary extends React.Component {
     render() {
         return (
             <div>
-                <p>Viewing {this.props.number} {this.props.number === 1 ? 'expense' : 'expenses'} totalling {numeral(this.props.total / 100).format('$0,0.00')}</p>
+                <h1>Viewing {this.props.number} {this.props.number === 1 ? 'expense' : 'expenses'} totalling {numeral(this.props.total / 100).format('$0,0.00')}</h1>
             </div>
         );
     };

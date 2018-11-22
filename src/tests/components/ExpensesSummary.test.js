@@ -2,18 +2,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { ExpensesSummary } from '../../components/ExpensesSummary';
 
-let wrapper;
-
-beforeEach(() => {
-    const number = 2;
-    const total = 150195;
-    wrapper = shallow(<ExpensesSummary number={number} total={total} />);
+test('should correctly render ExpensesSummary with 1 expense', () => {
+    const wrapper = shallow(<ExpensesSummary number={1} total={1095} />);
+    expect(wrapper).toMatchSnapshot();
 });
 
-test('should render ExpensesSummary correctly', () => {
+test('should correctly render ExpensesSummary with multiple expenses', () => {
+    const wrapper = shallow(<ExpensesSummary number={2} total={150195} />);
     expect(wrapper).toMatchSnapshot();
 });
 
 test('should provide correct values for expense count and total', () => {
-    expect(wrapper.find('p').html()).toEqual('<p>Viewing 2 expenses totalling $1,501.95</p>');
+    const wrapper = shallow(<ExpensesSummary number={2} total={150195} />);
+    expect(wrapper.find('h1').html()).toEqual('<h1>Viewing 2 expenses totalling $1,501.95</h1>');
 });
