@@ -14,5 +14,5 @@ test('should correctly render ExpensesSummary with multiple expenses', () => {
 
 test('should provide correct values for expense count and total', () => {
     const wrapper = shallow(<ExpensesSummary number={2} total={150195} />);
-    expect(wrapper.find('h1').html()).toEqual('<h1>Viewing 2 expenses totalling $1,501.95</h1>');
+    expect(wrapper.find('h1').html()).toEqual('<h1 class=\"page-header__title\">Viewing <span>2</span> expenses totalling <span>$1,501.95</span></h1>');
 });
