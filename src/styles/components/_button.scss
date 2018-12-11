@@ -17,3 +17,19 @@
 .button--secondary {
     background: $grey;
 }
+
+.button--google {
+    background: $google;
+}
+
+.button--facebook {
+    background: $facebook;
+}
+
+.button__login {
+    width: 100%;
+}
+
+.button__bottommargin {
+    margin-bottom: $s-size;
+}
