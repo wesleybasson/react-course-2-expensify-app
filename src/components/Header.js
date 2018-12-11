@@ -21,5 +21,3 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(undefined, mapDispatchToProps)(Header);
-
-// <NavLink to="/create" activeClassName="is-active">Add Expense</NavLink>
