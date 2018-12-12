@@ -26,8 +26,20 @@
     background: $facebook;
 }
 
-.button__login {
+.button--success {
+    background: $green;
+}
+
+.button--cancel {
+    background: $off-red;
+}
+
+.button__full {
     width: 100%;
+}
+
+.button__half {
+    width: 50%;
 }
 
 .button__bottommargin {
