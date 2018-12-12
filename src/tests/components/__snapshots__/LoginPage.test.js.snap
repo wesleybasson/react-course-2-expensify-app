@@ -16,13 +16,13 @@ exports[`should render LoginPage correctly 1`] = `
       It's time to get your expenses under control.
     </p>
     <button
-      className="button"
+      className="button button__full button__bottommargin button--google"
       onClick={[Function]}
     >
       Login with Google
     </button>
     <button
-      className="button"
+      className="button button__full button--facebook"
       onClick={[Function]}
     >
       Login with Facebook
