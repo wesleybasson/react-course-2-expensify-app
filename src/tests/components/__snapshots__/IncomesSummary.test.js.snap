@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
+exports[`should correctly render IncomesSummary with 1 income 1`] = `
 <div
   className="page-header"
 >
@@ -15,7 +15,7 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
         1
       </span>
        
-      expense
+      income
        totalling 
       <span>
         $10.95
@@ -26,7 +26,7 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
     >
       <span />
        
-      expenses
+      incomes
        not shown.
     </h3>
     <div
@@ -35,16 +35,16 @@ exports[`should correctly render ExpensesSummary with 1 expense 1`] = `
       <Link
         className="button"
         replace={false}
-        to="/createexpense"
+        to="/createincome"
       >
-        Add Expense
+        Add Income
       </Link>
     </div>
   </div>
 </div>
 `;
 
-exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
+exports[`should correctly render IncomesSummary with multiple incomes 1`] = `
 <div
   className="page-header"
 >
@@ -59,7 +59,7 @@ exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
         2
       </span>
        
-      expenses
+      incomes
        totalling 
       <span>
         $1,501.95
@@ -70,7 +70,7 @@ exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
     >
       <span />
        
-      expenses
+      incomes
        not shown.
     </h3>
     <div
@@ -79,9 +79,9 @@ exports[`should correctly render ExpensesSummary with multiple expenses 1`] = `
       <Link
         className="button"
         replace={false}
-        to="/createexpense"
+        to="/createincome"
       >
-        Add Expense
+        Add Income
       </Link>
     </div>
   </div>

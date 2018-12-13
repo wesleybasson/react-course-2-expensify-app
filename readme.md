@@ -14,6 +14,14 @@ The following enhancements were made to the original Expensify app:
 * Number of hidden expenses are shown.
 * The app is set up to run on a subdomain. [Click Here to see](http://expensify.equipp.co.za/)
 
+## App Additions
+
+The following additions were added over and above the original Expensify app and the enhancements that were suggested by Andrew:
+
+* Incomes were added
+* The Header component now has buttons for Expenses and Incomes
+* The master dashboard page now shows a budget summary
+
 <!-- # Git Commands
 
 git init - Create a new git repo

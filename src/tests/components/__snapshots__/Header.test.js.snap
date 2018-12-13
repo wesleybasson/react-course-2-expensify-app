@@ -10,15 +10,33 @@ exports[`should render Header correctly 1`] = `
     <div
       className="header__content"
     >
-      <Link
-        className="header__title"
-        replace={false}
-        to="/dashboard"
+      <div
+        className="header__content"
       >
-        <h1>
-          Expensify
-        </h1>
-      </Link>
+        <Link
+          className="header__title header__title--margin-right"
+          replace={false}
+          to="/dashboard"
+        >
+          <h1>
+            Expensify
+          </h1>
+        </Link>
+        <Link
+          className="button button--link"
+          replace={false}
+          to="/incomes"
+        >
+          Incomes
+        </Link>
+        <Link
+          className="button button--link"
+          replace={false}
+          to="/expenses"
+        >
+          Expenses
+        </Link>
+      </div>
       <button
         className="button button--link"
         onClick={[Function]}

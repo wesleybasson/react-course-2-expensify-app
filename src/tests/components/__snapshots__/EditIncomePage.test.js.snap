@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditIncomePage correctly 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Income
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <IncomeForm
+      income={
+        Object {
+          "amount": 10999,
+          "createdAt": 345600000,
+          "description": "Refund",
+          "id": "3",
+          "note": "",
+        }
+      }
+      onSubmit={[Function]}
+    />
+    <button
+      className="button button--secondary"
+      onClick={[Function]}
+    >
+      Remove Income
+    </button>
+  </div>
+  <Component
+    handleAction={[Function]}
+    handleClose={[Function]}
+    modalOpen={false}
+    title="Remove Income"
+  />
+</div>
+`;

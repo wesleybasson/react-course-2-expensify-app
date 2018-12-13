@@ -15,7 +15,7 @@ export class ExpensesSummary extends React.Component {
                         <h3 className="page-header__subtitle"><span>{this.props.notshown}</span> {this.props.notshown === 1 ? 'expense' : 'expenses'} not shown.</h3>
                     )}
                     <div className="page-header__actions">
-                        <Link className="button" to="/create">Add Expense</Link>
+                        <Link className="button" to="/createexpense">Add Expense</Link>
                     </div>
                 </div>
             </div>

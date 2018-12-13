@@ -13,7 +13,7 @@ exports[`should render ExpenseListFilters correctly 1`] = `
       <input
         className="text-input"
         onChange={[Function]}
-        placeholder="Search expenses"
+        placeholder="Search"
         type="text"
         value=""
       />
@@ -142,7 +142,7 @@ exports[`should render ExpenseListFilters with alt data correctly 1`] = `
       <input
         className="text-input"
         onChange={[Function]}
-        placeholder="Search expenses"
+        placeholder="Search"
         type="text"
         value="bills"
       />

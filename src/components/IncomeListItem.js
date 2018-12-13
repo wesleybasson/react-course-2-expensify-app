@@ -4,7 +4,7 @@ import moment from 'moment';
 import numeral from 'numeral';
 
 export default ({ id, description, amount, createdAt }) => (
-    <Link className="list-item" to={`/editexpense/${id}`}>
+    <Link className="list-item" to={`/editincome/${id}`}>
         <div>
             <h3 className="list-item__title">{description}</h3>
             <span className="list-item__subtitle">{moment(createdAt).format('MMMM Do, YYYY')}</span>

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render BudgetSummary 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Budget 
+      surplus
+       totals 
+      <span>
+        $2,000.00
+      </span>
+    </h1>
+  </div>
+</div>
+`;

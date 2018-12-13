@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render IncomeList with empty message 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Incomes
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Income
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+        No Incomes
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render IncomeList with incomes 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Incomes
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Income
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <Component
+      amount={200000}
+      createdAt={0}
+      description="Salary"
+      id="1"
+      key="1"
+      note=""
+    />
+    <Component
+      amount={234500}
+      createdAt={-345600000}
+      description="Rent Income"
+      id="2"
+      key="2"
+      note=""
+    />
+    <Component
+      amount={10999}
+      createdAt={345600000}
+      description="Refund"
+      id="3"
+      key="3"
+      note=""
+    />
+  </div>
+</div>
+`;

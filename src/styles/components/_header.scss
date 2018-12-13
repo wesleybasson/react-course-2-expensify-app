@@ -16,3 +16,9 @@
         margin: 0;
     }
 }
+
+.header__title--margin-right {
+    h1 {
+        margin-right: $m-size;
+    }
+}

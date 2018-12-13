@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { startSetExpenses } from './actions/expenses';
+import { startSetIncomes } from './actions/incomes';
 import { login, logout } from './actions/auth';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -31,10 +32,12 @@ firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         store.dispatch(login(user.uid));
         store.dispatch(startSetExpenses()).then(() => {
-            renderApp();
-            if (history.location.pathname === '/') {
-                history.push('/dashboard');
-            }
+            store.dispatch(startSetIncomes()).then(() => {
+                renderApp();
+                if (history.location.pathname === '/') {
+                    history.push('/dashboard');
+                }
+            })
         });
     } else {
         store.dispatch(logout());

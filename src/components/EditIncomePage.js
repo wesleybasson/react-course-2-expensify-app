@@ -1,20 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ExpenseForm from './ExpenseForm';
-import { startEditExpense, startRemoveExpense } from '../actions/expenses';
+import IncomeForm from './IncomeForm';
+import { startEditIncome, startRemoveIncome } from '../actions/incomes';
 import RemoveModal from './ExpensifyModal';
 
-export class EditExpensePage extends React.Component {
+export class EditIncomePage extends React.Component {
     state = {
         modalOpen: false
     };
-    onSubmit = (expense) => {
-        this.props.startEditExpense(this.props.expense.id, expense );
-        this.props.history.push('/expenses');
+    onSubmit = (income) => {
+        this.props.startEditIncome(this.props.income.id, income );
+        this.props.history.push('/incomes');
     };
     onRemove = () => {
-        this.props.startRemoveExpense({ id: this.props.expense.id });
-        this.props.history.push('/expenses');
+        this.props.startRemoveIncome({ id: this.props.income.id });
+        this.props.history.push('/incomes');
     };
     handleOpen = () => {
         this.setState({ modalOpen: true });
@@ -23,17 +23,17 @@ export class EditExpensePage extends React.Component {
         this.setState({ modalOpen: false });
     };
     render() {
-        const title = "Remove Expense";
+        const title = "Remove Income";
         return (
             <div>
                 <div className="page-header">
                     <div className="content-container">
-                        <h1 className="page-header__title">Edit Expense</h1>
+                        <h1 className="page-header__title">Edit Income</h1>
                     </div>
                 </div>
                 <div className="content-container">
-                    <ExpenseForm
-                        expense={this.props.expense}
+                    <IncomeForm
+                        income={this.props.income}
                         onSubmit={this.onSubmit}
                     />
                     <button className="button button--secondary" onClick={this.handleOpen}>{title}</button>
@@ -50,12 +50,12 @@ export class EditExpensePage extends React.Component {
 }
 
 const mapStateToProps = (state, props) => ({
-    expense: state.expenses.find((expense) => expense.id === props.match.params.id)
+    income: state.incomes.find((income) => income.id === props.match.params.id)
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-    startEditExpense: (id, expense) => dispatch(startEditExpense(id, expense)),
-    startRemoveExpense: (id) => dispatch(startRemoveExpense(id))
+    startEditIncome: (id, income) => dispatch(startEditIncome(id, income)),
+    startRemoveIncome: (id) => dispatch(startRemoveIncome(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(EditExpensePage);
+export default connect(mapStateToProps, mapDispatchToProps)(EditIncomePage);

@@ -23,7 +23,7 @@ exports[`should render ExpensifyModal correctly 1`] = `
   <p
     className="modal__body"
   >
-    Do you really want to remove this expense?
+    Do you really want to remove this item?
   </p>
   <div
     className="container"

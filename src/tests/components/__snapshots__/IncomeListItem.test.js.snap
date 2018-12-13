@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseListItem with fixture expense data 1`] = `
+exports[`should render IncomeListItem with fixture income data 1`] = `
 <Link
   className="list-item"
   replace={false}
-  to="/editexpense/2"
+  to="/editincome/2"
 >
   <div>
     <h3
       className="list-item__title"
     >
-      Rent
+      Rent Income
     </h3>
     <span
       className="list-item__subtitle"
@@ -21,7 +21,7 @@ exports[`should render ExpenseListItem with fixture expense data 1`] = `
   <h3
     className="list-item__data"
   >
-    $1,095.00
+    $2,345.00
   </h3>
 </Link>
 `;
