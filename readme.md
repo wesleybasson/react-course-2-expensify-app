@@ -12,7 +12,7 @@ The following enhancements were made to the original Expensify app:
 * A modal was added to prompt the user before removing an expense.
 * Facebook login system added.
 * Number of hidden expenses are shown.
-* The app is set up to run on a subdomain. [Click Here to see](http://expensify.equipp.co.za/)
+* The app is set up to run on a subdomain. [Click Here to see](http://expensify.zurchholdings.com/)
 
 ## App Additions
 
